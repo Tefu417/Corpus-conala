@@ -1,0 +1,45 @@
+sorted(l, key=lambda x: (-int(x[1]), x[0]))	Sort a nested list by two elements
+[int(x) for x in str(num)]	converting integer to list in python
+c.decode('unicode_escape')	Converting byte string in unicode string
+parser.add_argument('-t', dest='table', help='', nargs='+')	List of arguments with argparse
+datetime.datetime.strptime(s, '%Y-%m-%dT%H:%M:%SZ')	How to convert a Date string to a DateTime object?
+np.array(x._data).reshape(x.size[::-1]).T	How to efficiently convert Matlab engine arrays to numpy ndarray?
+soup.get_text().replace('\n', '\n\n')	Converting html to text with Python
+re.sub('(?<!\\S)((\\S+)(?:\\s+\\2))(?:\\s+\\2)+(?!\\S)', '\\1', s)	regex for repeating words in a string in Python
+mylist.sort(key=lambda d: (d['weight'], d['factor']))	Ordering a list of dictionaries in python
+itertools.combinations	Two Combination Lists from One List
+[{'A': 1, 'C': 4, 'B': 2, 'D': 4}, {'A': 1, 'C': 4, 'B': 1, 'D': 5}]	Creating a list of dictionaries in python
+zip(*[[1, 2], [3, 4], [5, 6]])	How to zip lists in a list
+pygame.display.flip()	How to display Image in pygame?
+print([l[i:i + n] for i in range(len(l)) for n in range(1, len(l) - i + 1)])	Two Combination Lists from One List
+Comment.objects.all().order_by('-hotness')	Dynamic order in django-mptt
+urllib.parse.unquote('Foo%E2%84%A2%20Bar').decode('utf-8')	How to decode encodeURIComponent in GAE (python)?
+max(min(my_value, max_value), min_value)	Clamping floating numbers in Python?
+pd.get_dummies(df)	How to binarize the values in a pandas DataFrame?
+re.sub('[^A-Z]', '', s)	How to extract all UPPER from a string? Python
+re.compile('^(.+)\\n((?:\\n.+)+)', re.MULTILINE)	Python regular expression matching a multiline block of text
+"""{0:,.2f}""".format(24322.34)	Convert float to comma-separated string
+[d['key'] for d in l]	Get a list of values from a list of dictionaries in python
+print(max(d, key=lambda x: (d[x]['salary'], d[x]['bonus'])))	How do I compare values in a dictionary?
+for i in x: pass	Expand a string describing a set of numbers noted as a list of numbers and/or ranges
+test_df_raw = pd.read_csv('test.csv', header=None, names=['label', 'tweet'])	How to train large Dataset for classification
+temp = x x = y y = temp + y	Multiple assignment and evaluation order in Python
+for d in range(95): pass	How to break nested for loop in Python?
+ax.legend(loc='upper right') ax.grid() return ax	Colors in Andrews Curves
+class MyClass(object): def __float__(self): pass	How to overload `float()` for a custom class in Python?
+setattr(type(None), 'somefield', 'somevalue')	What is a None value?
+from twython import Twython twitter = Twython() followers = twitter.get_followers_ids(screen_name='ryanmcgrath') for follower_id in followers: pass	How to get twitter followers using Twython?
+chrome_options.add_extension('path_to_extension')	How to select Chrome extensions to enable when using Selenium
+self.settings = settings	How to set class attribute with await in __init__ mylist = [1, 2]
+myfunc(*mylist)	passing one list of values instead of mutiple arguments to a function?
+input = 634 digits = [int(i) for i in str(input)] print(digits)	Split three-digit integer to three-item list of each digit in Python
+'2017-01-01 12:02:00', '2017-01-01 12:03:00', '2017-01-01 12:04:00'	Python Pandas - find consecutive group with max aggregate values
+y = norm_vals[ij] / np.sqrt(x + 1) + 1 / (x + 1)	Speed up double loop in Python
+class Physician(Model): pass	Sorting and indexing into a list in a Django template?
+device = xmlrpclib.ServerProxy('http://localhost:1234/RPC2') device.output(base64.b64encode('.\n.' + chr(2)))	How can I transfer binary data over xmlrpc (python)?
+if isinstance(obj, pandas.core.frame.DataFrame): od = OrderedDict()	How to use pandas dataframes and numpy arrays in Rpy2?
+r, c = A.shape	Numpy/Python: Efficient matrix as multiplication of cartesian product of input matrix
+for module in examined_modules: module = sys.modules[module] if hasattr(module, 'init'): module.init() if hasattr(module, 'deinit'): atexit.register(module.deinit)	Python dependency analyzer library
+import matplotlib.pyplot as plt x = np.linspace(0, 10, 100)	How do you make the linewidth of a single line change as a function of x in matplotlib?
+return module	Retrieve module object from stack frame
+i = iter(list_)	Split a list into parts based on a set of indexes in Python
