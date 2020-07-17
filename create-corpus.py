@@ -1,18 +1,18 @@
 import json
 
-with open('corpus-conala2.txt', 'a') as newfile :
+with open('new-corpus-conala.txt', 'a') as newfile :
 
-    with open('conala-json/conala-test.json') as fin :
-        for data in json.load(fin) :
-        # for line in fin :
-            # data = json.load(line)
-            # load() 辞書型になる
-            s = str(data['snippet'])
-            i = str(data['intent'])
-            ri = str(data['rewritten_intent'])
-            l = str(s + '\t' + i + '\t' + ri)
-            newfile.write(l)
-            newfile.write('\n')
+    # with open('conala-json/conala-test.json') as fin :
+    #     for data in json.load(fin) :
+    #     # for line in fin :
+    #         # data = json.load(line)
+    #         # load() 辞書型になる
+    #         s = str(data['snippet'])
+    #         i = str(data['intent'])
+    #         ri = str(data['rewritten_intent'])
+    #         l = str('<sos>' + s + '<tab>' + i + '<tab>' + ri + '<eos>')
+    #         newfile.write(l)
+    #         newfile.write('\n')
 
     with open('conala-json/conala-train.json') as fin :
         for data in json.load(fin) :
@@ -20,7 +20,7 @@ with open('corpus-conala2.txt', 'a') as newfile :
             # data = json.load(line)
             s = str(data['snippet'])
             i = str(data['intent'])
-            ri = str(data['rewritten_intent'])
-            l = str(s + '\t' + i + '\t' + ri)
+            # ri = str(data['rewritten_intent'])
+            l = str('<sos>' + s + '<tab>' + i + '<eos>')
             newfile.write(l)
             newfile.write('\n')
