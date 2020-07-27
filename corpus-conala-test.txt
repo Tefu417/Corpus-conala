@@ -1,0 +1,557 @@
+<sos>os.kill(os.getpid(), signal.SIGUSR1)<tab>How can I send a signal from a python program?<eos>
+<sos>bytes.fromhex('4a4b4c').decode('utf-8')<tab>Decode Hex String in Python 3<eos>
+<sos>all(x == myList[0] for x in myList)<tab>check if all elements in a list are identical<eos>
+<sos>print('%*s : %*s' % (20, 'Python', 20, 'Very Good'))<tab>Format string dynamically<eos>
+<sos>d.decode('cp1251').encode('utf8')<tab>How to convert a string from CP-1251 to UTF-8?<eos>
+<sos>res = {k: v for k, v in list(kwargs.items()) if v is not None}<tab>How I can get rid of None values in dictionary?<eos>
+<sos>res = dict((k, v) for k, v in kwargs.items() if v is not None)<tab>How I can get rid of None values in dictionary?<eos>
+<sos>subprocess.check_output('ps -ef | grep something | wc -l', shell=True)<tab>Python: how to get the final output of multiple system commands?<eos>
+<sos>"""""".join(['a', 'b', 'c'])<tab>splitting and concatenating a string<eos>
+<sos>pd.Series(list(set(s1).intersection(set(s2))))<tab>Finding the intersection between two series in Pandas<eos>
+<sos>client.send('HTTP/1.0 200 OK\r\n')<tab>Sending http headers with python<eos>
+<sos>then = datetime.datetime.strptime(when, '%Y-%m-%d').date()<tab>Python -Remove Time from Datetime String<eos>
+<sos>inputString.split('\n')<tab>How do I split a multi-line string into multiple lines?<eos>
+<sos>' a \n b \r\n c '.split('\n')<tab>How do I split a multi-line string into multiple lines?<eos>
+<sos>""":""".join(str(x) for x in b)<tab>How to join mixed list (array) (with integers in it) in Python?<eos>
+<sos>Entry.objects.filter()[:1].get()<tab>Fastest way to get the first object from a queryset in django?<eos>
+<sos>a.sum(axis=1)<tab>How to calculate the sum of all columns of a 2D numpy array (efficiently)<eos>
+<sos>warnings.simplefilter('always')<tab>Python, how to enable all warnings?<eos>
+<sos>print(' '.join(map(str, l)))<tab>Python printing without commas<eos>
+<sos>subprocess.call(['python.exe', 'hello.py', 'htmlfilename.htm'])<tab>OSError: [WinError 193] %1 is not a valid Win32 application<eos>
+<sos>time.strptime('30/03/09 16:31:32.123', '%d/%m/%y %H:%M:%S.%f')<tab>How can I parse a time string containing milliseconds in it with python?<eos>
+<sos>my_float = float(my_string.replace(',', ''))<tab>How can I convert a string with dot and comma into a float number in Python<eos>
+<sos>float('123,456.908'.replace(',', ''))<tab>How can I convert a string with dot and comma into a float number in Python<eos>
+<sos>sys.path.append('/path/to/whatever')<tab>In Python script, how do I set PYTHONPATH?<eos>
+<sos>re.split('(\\W+)', 'Words, words, words.')<tab>Determining the unmatched portion of a string using a regex in Python<eos>
+<sos>file = open('Output.txt', 'a')<tab>How to read data from Excel and write it to text file line by line?<eos>
+<sos>urllib.request.urlretrieve('http://www.example.com/songs/mp3.mp3', 'mp3.mp3')<tab>download a file over HTTP<eos>
+<sos>u = urllib.request.urlopen(url)
+f = open(file_name, 'wb')
+meta = u.info()
+file_size = int(meta.getheaders('Content-Length')[0])
+print(('Downloading: %s Bytes: %s' % (file_name, file_size)))
+file_size_dl = 0
+block_sz = 8192
+while True:
+    buffer = u.read(block_sz)
+    if (not buffer):
+        break
+    file_size_dl += len(buffer)
+    f.write(buffer)
+    status = ('%10d  [%3.2f%%]' % (file_size_dl, ((file_size_dl * 100.0) / file_size)))
+    status = (status + (chr(8) * (len(status) + 1)))
+    print(status, end=' ')
+f.close()<tab>download a file over HTTP<eos>
+<sos>response = urllib.request.urlopen('http://www.example.com/')
+html = response.read()<tab>download a file over HTTP<eos>
+<sos>r = requests.get(url)<tab>download a file over HTTP<eos>
+<sos>response = requests.get(url, stream=True)
+with open('10MB', 'wb') as handle:
+    for data in tqdm(response.iter_content()):
+        handle.write(data)<tab>download a file over HTTP<eos>
+<sos>parser.add_argument('--version', action='version', version='%(prog)s 2.0')<tab>Python's argparse to show program's version with prog and version string formatting<eos>
+<sos>{i: d[i] for i in d if i != 'c'}<tab>Remove key from dictionary in Python returning new dictionary<eos>
+<sos>pd.merge(split_df, csv_df, on=['key'], suffixes=('_left', '_right'))<tab>Merging two pandas dataframes<eos>
+<sos>s.split(' ', 4)<tab>Python regular expression split() string<eos>
+<sos>input('Enter your input:')<tab>How to read keyboard-input?<eos>
+<sos>app.run(debug=True)<tab>Auto reloading python Flask app upon code changes<eos>
+<sos>pickle.dump(mylist, open('save.txt', 'wb'))<tab>Python save list and read data from file<eos>
+<sos>scipy.tensordot(P, T, axes=[1, 1]).swapaxes(0, 1)<tab>Numpy: Multiplying a matrix with a 3d tensor -- Suggestion<eos>
+<sos>numpy.zeros((3, 3, 3))<tab>How to create nested lists in python?<eos>
+<sos>""" """.join(content.split(' ')[:-1])<tab>Python: Cut off the last word of a sentence?<eos>
+<sos>x = np.asarray(x).reshape(1, -1)[(0), :]<tab>Numpy convert scalars to arrays<eos>
+<sos>sum(sum(i) if isinstance(i, list) else i for i in L)<tab>Finding the sum of a nested list of ints<eos>
+<sos>struct.unpack('!f', '470FC614'.decode('hex'))[0]<tab>Convert hex to float<eos>
+<sos>my_dict.update((x, y * 2) for x, y in list(my_dict.items()))<tab>Python: Perform an operation on each dictionary value<eos>
+<sos>subprocess.call('sleep.sh', shell=True)<tab>Running bash script from within python<eos>
+<sos>""",""".join(l)<tab>How would you make a comma-separated string from a list?<eos>
+<sos>myList = ','.join(map(str, myList))<tab>How would you make a comma-separated string from a list?<eos>
+<sos>list(reversed(list(range(10))))<tab>Print a list in reverse order with range()?<eos>
+<sos>print('lamp, bag, mirror'.replace('bag,', ''))<tab>How can i subtract two strings in python?<eos>
+<sos>""".""".join(s.split('.')[::-1])<tab>python reverse tokens in a string<eos>
+<sos>datetime.datetime.fromtimestamp(s).strftime('%Y-%m-%d %H:%M:%S.%f')<tab>converting epoch time with milliseconds to datetime<eos>
+<sos>time.strftime('%Y-%m-%d %H:%M:%S', time.gmtime(1236472051807 / 1000.0))<tab>converting epoch time with milliseconds to datetime<eos>
+<sos>(datetime.datetime.now() - datetime.timedelta(days=7)).date()<tab>Getting the date of 7 days ago from current date in python<eos>
+<sos>print(sum(row[column] for row in data))<tab>How can I sum a column of a list?<eos>
+<sos>[sum(row[i] for row in array) for i in range(len(array[0]))]<tab>How can I sum a column of a list?<eos>
+<sos>base64.b64encode(bytes('your string', 'utf-8'))<tab>How to encode text to base64 in python<eos>
+<sos>dict((k, [d[k] for d in dicts]) for k in dicts[0])<tab>How can I combine dictionaries with the same keys in python?<eos>
+<sos>{k: [d[k] for d in dicts] for k in dicts[0]}<tab>How can I combine dictionaries with the same keys in python?<eos>
+<sos>request.args['myParam']<tab>How do I get the url parameter in a Flask view<eos>
+<sos>[k for k, v in list(Counter(mylist).items()) if v > 1]<tab>Identify duplicate values in a list in Python<eos>
+<sos>sys.path.insert(1, os.path.join(os.path.dirname(__file__), 'apps'))<tab>How do you modify sys.path in Google App Engine (Python)?<eos>
+<sos>sys.path.append(os.path.join(os.path.dirname(__file__), 'subdir'))<tab>How do you modify sys.path in Google App Engine (Python)?<eos>
+<sos>db.execute("INSERT INTO present VALUES('test2', ?, 10)", (None,))<tab>Insert Null into SQLite3 in Python<eos>
+<sos>[image for menuitem in list_of_menuitems for image in menuitem]<tab>Flattening a shallow list in Python<eos>
+<sos>a.extend(b)<tab>Append elements of a set to a list in Python<eos>
+<sos>a.extend(list(b))<tab>Append elements of a set to a list in Python<eos>
+<sos>np.savetxt('c:\\data\\np.txt', df.values, fmt='%d')<tab>Python, Pandas : write content of DataFrame into text File<eos>
+<sos>df.to_csv('c:\\data\\pandas.txt', header=None, index=None, sep=' ', mode='a')<tab>Python, Pandas : write content of DataFrame into text File<eos>
+<sos>print(x.rpartition('-')[0])<tab>how to get the last part of a string before a certain character?<eos>
+<sos>print(x.rsplit('-', 1)[0])<tab>how to get the last part of a string before a certain character?<eos>
+<sos>ftp.storlines('STOR ' + filename, open(filename, 'r'))<tab>FTP upload files Python<eos>
+<sos>browser.execute_script("document.getElementById('XYZ').value+='1'")<tab>Write value to hidden element with selenium python script<eos>
+<sos>np.maximum([2, 3, 4], [1, 5, 2])<tab>Combining two numpy arrays to form an array with the largest value from each array<eos>
+<sos>print(l[3:] + l[:3])<tab>How to print an entire list while not starting by the first item<eos>
+<sos>for fn in os.listdir('.'):
+    if os.path.isfile(fn):
+        pass<tab>loop over files<eos>
+<sos>for (root, dirs, filenames) in os.walk(source):
+    for f in filenames:
+        pass<tab>loop over files<eos>
+<sos>[int(1000 * random.random()) for i in range(10000)]<tab>Create random list of integers in Python<eos>
+<sos>datetime.datetime.now().strftime('%H:%M:%S.%f')<tab>Using %f with strftime() in Python to get microseconds<eos>
+<sos>db.GqlQuery('SELECT * FROM Schedule WHERE station = $1', foo.key())<tab>Build a GQL query (for Google App Engine) that has a condition on ReferenceProperty<eos>
+<sos>df.b.str.contains('^f')<tab>How to filter rows in pandas by regex<eos>
+<sos>print('\n'.join('\t'.join(str(col) for col in row) for row in tab))<tab>What is the best way to print a table with delimiters in Python<eos>
+<sos>df.set_index(list('BC')).drop(tuples, errors='ignore').reset_index()<tab>Pandas: Delete rows based on multiple columns values<eos>
+<sos>"""({:d} goals, ${:d})""".format(self.goals, self.penalties)<tab>String Formatting in Python 3<eos>
+<sos>"""({} goals, ${})""".format(self.goals, self.penalties)<tab>String Formatting in Python 3<eos>
+<sos>"""({0.goals} goals, ${0.penalties})""".format(self)<tab>String Formatting in Python 3<eos>
+<sos>[int(''.join(str(d) for d in x)) for x in L]<tab>Convert list of lists to list of integers<eos>
+<sos>[''.join(str(d) for d in x) for x in L]<tab>Convert list of lists to list of integers<eos>
+<sos>L = [int(''.join([str(y) for y in x])) for x in L]<tab>Convert list of lists to list of integers<eos>
+<sos>myfile.write('\n'.join(lines))<tab>How to write a list to a file with newlines in Python3<eos>
+<sos>[x for x in ['AAT', 'XAC', 'ANT', 'TTA'] if 'X' not in x and 'N' not in x]<tab>Removing an element from a list based on a predicate<eos>
+<sos>text = re.sub('\\b(\\w+)( \\1\\b)+', '\\1', text)<tab>python regular expression to remove repeated words<eos>
+<sos>df.astype(bool).sum(axis=1)<tab>Counting non zero values in each column of a dataframe in python<eos>
+<sos>re.search('(?<!Distillr)\\\\AcroTray\\.exe', 'C:\\SomeDir\\AcroTray.exe')<tab>Python match string if it does not start with X<eos>
+<sos>"""QH QD JC KD JS""".split()<tab>String to list in Python<eos>
+<sos>print(re.search('>.*<', line).group(0))<tab>Parsing XML in Python with regex<eos>
+<sos>open(filename, 'w').close()<tab>How to empty a file using Python<eos>
+<sos>datetime.datetime.strptime(string_date, '%Y-%m-%d %H:%M:%S.%f')<tab>how to convert a string date into datetime format in python?<eos>
+<sos>[index for index, item in enumerate(thelist) if item[0] == '332']<tab>What's the fastest way to locate a list element within a list in python?<eos>
+<sos>re.sub('[^\\sa-zA-Z0-9]', '', text).lower().strip()<tab>Python: trying to lower a string and remove non-alphanumeric characters aside from space<eos>
+<sos>re.sub('(?!\\s)[\\W_]', '', text).lower().strip()<tab>Python: trying to lower a string and remove non-alphanumeric characters aside from space<eos>
+<sos>plt.plot(x, y, label='H\u2082O')<tab>Subscripting text in matplotlib labels<eos>
+<sos>plt.plot(x, y, label='$H_2O$')<tab>Subscripting text in matplotlib labels<eos>
+<sos>[x for x in mylist if len(x) == 3]<tab>Looping over a list in Python<eos>
+<sos>lst = [Object() for _ in range(100)]<tab>Initialize a list of objects in Python<eos>
+<sos>lst = [Object() for i in range(100)]<tab>Initialize a list of objects in Python<eos>
+<sos>self.driver.find_element_by_css_selector('.someclass a').get_attribute('href')<tab>selenium how to get the content of href within some targeted class<eos>
+<sos>df1.merge(df2, on='Date_Time')<tab>Joining Table/DataFrames with common Column in Python<eos>
+<sos>'first string is: %s, second one is: %s' % (str1, 'geo.tif')<tab>insert variable values into a string in python<eos>
+<sos>[x.strip() for x in '2.MATCHES $$TEXT$$ STRING'.split('$$TEXT$$')]<tab>Split a string by a delimiter in python<eos>
+<sos>if (not os.path.exists(directory)):
+    os.makedirs(directory)<tab>check if a directory exists and create it if necessary<eos>
+<sos>try:
+    os.makedirs(path)
+except OSError:
+    if (not os.path.isdir(path)):
+        raise<tab>check if a directory exists and create it if necessary<eos>
+<sos>distutils.dir_util.mkpath(path)<tab>check if a directory exists and create it if necessary<eos>
+<sos>try:
+    os.makedirs(path)
+except OSError as exception:
+    if (exception.errno != errno.EEXIST):
+        raise<tab>check if a directory exists and create it if necessary<eos>
+<sos>re.sub('\\bH3\\b', 'H1', text)<tab>Replace a substring when it is a separate word<eos>
+<sos>re.sub('\\D', '', 'aas30dsa20')<tab>Python: removing characters except digits from string<eos>
+<sos>"""""".join([x for x in 'aas30dsa20' if x.isdigit()])<tab>Python: removing characters except digits from string<eos>
+<sos>print(soup.find('name').string)<tab>How to access a tag called "name" in BeautifulSoup<eos>
+<sos>records = dict((record['_id'], record) for record in cursor)<tab>Iterate through PyMongo Cursor as key-value pair<eos>
+<sos>np.concatenate((A, B))<tab>Python how to combine two matrices in numpy<eos>
+<sos>np.vstack((A, B))<tab>Python how to combine two matrices in numpy<eos>
+<sos>os.stat(filepath).st_size<tab>how to check the character count of a file in python<eos>
+<sos>l.count('a')<tab>count the occurrences of a list item<eos>
+<sos>Counter(l)<tab>count the occurrences of a list item<eos>
+<sos>[[x, l.count(x)] for x in set(l)]<tab>count the occurrences of a list item<eos>
+<sos>dict(((x, l.count(x)) for x in set(l)))<tab>count the occurrences of a list item<eos>
+<sos>l.count('b')<tab>count the occurrences of a list item<eos>
+<sos>shutil.copy(srcfile, dstdir)<tab>How to copy a file using python?<eos>
+<sos>max(k for k, v in x.items() if v != 0)<tab>Efficient way to find the largest key in a dictionary with non-zero value<eos>
+<sos>(k for k, v in x.items() if v != 0)<tab>Efficient way to find the largest key in a dictionary with non-zero value<eos>
+<sos>max(k for k, v in x.items() if v != 0)<tab>Efficient way to find the largest key in a dictionary with non-zero value<eos>
+<sos>file.seek(0)<tab>Re-read an open file Python<eos>
+<sos>df['c'] = np.where(df['a'].isnull, df['b'], df['a'])<tab>Coalesce values from 2 columns into a single column in a pandas dataframe<eos>
+<sos>del d['ele']<tab>python: Is this a wrong way to remove an element from a dict?<eos>
+<sos>MyModel.objects.update(timestamp=F('timestamp') + timedelta(days=36524.25))<tab>How can I subtract or add 100 years to a datetime field in the database in Django?<eos>
+<sos>['it'] + ['was'] + ['annoying']<tab>How to merge multiple lists into one list in python?<eos>
+<sos>str(int(x) + 1).zfill(len(x))<tab>How to increment a value with leading zeroes?<eos>
+<sos>all(df.index[:-1] <= df.index[1:])<tab>How can I check if a Pandas dataframe's index is sorted<eos>
+<sos>list(t)<tab>Convert tuple to list<eos>
+<sos>tuple(l)<tab>Convert tuple to list<eos>
+<sos>level1 = map(list, level1)<tab>Convert tuple to list and back<eos>
+<sos>pprint.pprint(dataobject, logFile)<tab>how to send the output of pprint module to a log file<eos>
+<sos>df.loc[df['BoolCol']]<tab>Python Pandas: Get index of rows which column matches certain value<eos>
+<sos>df.iloc[np.flatnonzero(df['BoolCol'])]<tab>Python Pandas: Get index of rows which column matches certain value<eos>
+<sos>df[df['BoolCol'] == True].index.tolist()<tab>Python Pandas: Get index of rows which column matches certain value<eos>
+<sos>df[df['BoolCol']].index.tolist()<tab>Python Pandas: Get index of rows which column matches certain value<eos>
+<sos>os.chdir(owd)<tab>How do I change directory back to my original working directory with Python?<eos>
+<sos>c.execute("INSERT INTO test VALUES (?, 'bar')", (testfield,))<tab>How to insert strings with quotes and newlines into sqlite db with Python?<eos>
+<sos>"""\\x89\\n""".decode('string_escape')<tab>Python - how to convert a "raw" string into a normal string<eos>
+<sos>raw_string.decode('string_escape')<tab>Python - how to convert a "raw" string into a normal string<eos>
+<sos>raw_byte_string.decode('unicode_escape')<tab>Python - how to convert a "raw" string into a normal string<eos>
+<sos>[m.group(0) for m in re.finditer('(\\d)\\1*', s)]<tab>Splitting a string with repeated characters into a list using regex<eos>
+<sos>plt.scatter(np.random.randn(100), np.random.randn(100), facecolors='none')<tab>How to do a scatter plot with empty circles in Python?<eos>
+<sos>plt.plot(np.random.randn(100), np.random.randn(100), 'o', mfc='none')<tab>How to do a scatter plot with empty circles in Python?<eos>
+<sos>soup.find('div', id='main-content').decompose()<tab>Deleting a div with a particlular class using BeautifulSoup<eos>
+<sos>df[df['ids'].str.contains('ball')]<tab>How to filter rows containing a string pattern from a Pandas dataframe<eos>
+<sos>df.reset_index(level=0, inplace=True)<tab>How to convert pandas index in a dataframe to a column?<eos>
+<sos>df['index1'] = df.index<tab>How to convert pandas index in a dataframe to a column?<eos>
+<sos>df.reset_index(level=['tick', 'obs'])<tab>How to convert pandas index in a dataframe to a column?<eos>
+<sos>[x[::-1] for x in b]<tab>Generic reverse of list items in Python<eos>
+<sos>np.array([zip(x, y) for x, y in zip(a, b)])<tab>in Numpy, how to zip two 2-D arrays?<eos>
+<sos>np.array(zip(a.ravel(), b.ravel()), dtype='i4,i4').reshape(a.shape)<tab>in Numpy, how to zip two 2-D arrays?<eos>
+<sos>""",""".join([str(i) for i in list_of_ints])<tab>How to convert a list of longs into a comma separated string in python<eos>
+<sos>requests.post(url, data=DATA, headers=HEADERS_DICT, auth=(username, password))<tab>Posting raw data with Python<eos>
+<sos>'abcd}def}'.rfind('}')<tab>Find last occurrence of character<eos>
+<sos>print([item for item in [1, 2, 3]])<tab>Ending with a for loop in python<eos>
+<sos>[(x['x'], x['y']) for x in d]<tab>transpose dictionary (extract all the values for one key from a list of dictionaries)<eos>
+<sos>print(os.path.splitext(os.path.basename('hemanth.txt'))[0])<tab>How to get the filename without the extension from a path in Python?<eos>
+<sos>dict(x[i:i + 2] for i in range(0, len(x), 2))<tab>Make dictionary from list with python<eos>
+<sos>values = sum([['A', 'B', 'C'], ['D', 'E', 'F'], ['G', 'H', 'I']], [])<tab>Merging a list of lists<eos>
+<sos>df = df[(df['closing_price'] >= 99) & (df['closing_price'] <= 101)]<tab>How to select rows in a DataFrame between two values, in Python Pandas?<eos>
+<sos>df.replace({'\n': '<br>'}, regex=True)<tab>Replace all occurrences of a string in a pandas dataframe (Python)<eos>
+<sos>df.replace({'\n': '<br>'}, regex=True)<tab>Replace all occurrences of a string in a pandas dataframe (Python)<eos>
+<sos>[(x + y) for x, y in zip(word, word[1:])]<tab>Mapping a string into a list of pairs<eos>
+<sos>list(map(lambda x, y: x + y, word[:-1], word[1:]))<tab>Mapping a string into a list of pairs<eos>
+<sos>print(re.findall('(https?://[^\\s]+)', myString))<tab>How do you extract a url from a string using python?<eos>
+<sos>print(re.search('(?P<url>https?://[^\\s]+)', myString).group('url'))<tab>How do you extract a url from a string using python?<eos>
+<sos>re.sub('[^A-Za-z0-9]+', '', mystring)<tab>Remove all special characters, punctuation and spaces from string<eos>
+<sos>pd.date_range('2016-01-01', freq='WOM-2FRI', periods=13)<tab>How to get a daterange of the 2nd Fridays of each month?<eos>
+<sos>matrix = [[a, b], [c, d], [e, f]]<tab>Multidimensional array in Python<eos>
+<sos>mystring.replace(' ', '_')<tab>How do I replace whitespaces with underscore and vice versa?<eos>
+<sos>os.path.abspath('mydir/myfile.txt')<tab>How to get an absolute file path in Python<eos>
+<sos>""" """.join(my_string.split())<tab>Is there a string-collapse library function in python?<eos>
+<sos>os.path.splitext(filename)[0]<tab>Get Filename Without Extension in Python<eos>
+<sos>[sum(l[:i]) for i, _ in enumerate(l)]<tab>How to sum elements in functional way<eos>
+<sos>"""Docs/src/Scripts/temp""".replace('/', '/\x00/').split('\x00')<tab>Python Regex Split Keeps Split Pattern Characters<eos>
+<sos>np.random.shuffle(np.transpose(r))<tab>Shuffle columns of an array with Numpy<eos>
+<sos>df['D'] = df['B']<tab>Copy all values in a column to a new column in a pandas dataframe<eos>
+<sos>list(data['A']['B'].values())[0]['maindata'][0]['Info']<tab>Find a value within nested json dictionary in python<eos>
+<sos>all(predicate(x) for x in string)<tab>True for all characters of a string<eos>
+<sos>os.statvfs('/').f_files - os.statvfs('/').f_ffree<tab>How to determine number of files on a drive with Python?<eos>
+<sos>cursor.fetchone()[0]<tab>how to get a single result from a SQLite query in python?<eos>
+<sos>user_list = [int(number) for number in user_input.split(',')]<tab>How to convert a string list into an integer in python<eos>
+<sos>[int(s) for s in user.split(',')]<tab>How to convert a string list into an integer in python<eos>
+<sos>sorted(list, key=lambda x: (x[0], -x[1]))<tab>Sorting a Python list by two criteria<eos>
+<sos>ut.sort(key=cmpfun, reverse=True)<tab>How to sort a list of objects , based on an attribute of the objects?<eos>
+<sos>ut.sort(key=lambda x: x.count, reverse=True)<tab>How to sort a list of objects , based on an attribute of the objects?<eos>
+<sos>ut.sort(key=lambda x: x.count, reverse=True)<tab>How to sort a list of objects , based on an attribute of the objects?<eos>
+<sos>driver.find_element_by_partial_link_text('Send').click()<tab>Click a href button with selenium and python?<eos>
+<sos>driver.findElement(By.linkText('Send InMail')).click()<tab>Click a href button with selenium and python?<eos>
+<sos>driver.find_element_by_link_text('Send InMail').click()<tab>Click a href button with selenium and python?<eos>
+<sos>'ME' + str(i)<tab>Casting an int to a string in Python<eos>
+<sos>df.sort_values(['System_num', 'Dis'])<tab>Sorting data in DataFrame Pandas<eos>
+<sos>open('outfile', 'w').write('#test firstline\n' + open('infile').read())<tab>Prepend a line to an existing file in Python<eos>
+<sos>l.sort(key=lambda t: len(t[1]), reverse=True)<tab>Python sort a List by length of value in tuple<eos>
+<sos>re.findall('\\b(\\w+)d\\b', s)<tab>Split by suffix with Python regular expression<eos>
+<sos>bool(re.search('ba[rzd]', 'foobarrrr'))<tab>python's re: return True if regex contains in the string<eos>
+<sos>list(set(t))<tab>Removing duplicates in lists<eos>
+<sos>list(set(source_list))<tab>Removing duplicates in lists<eos>
+<sos>list(OrderedDict.fromkeys('abracadabra'))<tab>Removing duplicates in lists<eos>
+<sos>numpy.array(a).reshape(-1).tolist()<tab>How to make List from Numpy Matrix in Python<eos>
+<sos>numpy.array(a)[0].tolist()<tab>How to make List from Numpy Matrix in Python<eos>
+<sos>print(soup.find(text='Address:').findNext('td').contents[0])<tab>Beautifulsoup - nextSibling<eos>
+<sos>""" """.join([('%d@%d' % t) for t in l])<tab>Converting lists of tuples to strings Python<eos>
+<sos>""" """.join([('%d@%d' % (t[0], t[1])) for t in l])<tab>Converting lists of tuples to strings Python<eos>
+<sos>driver.execute_script('return document.documentElement.outerHTML;')<tab>Splinter or Selenium: Can we get current html page after clicking a button?<eos>
+<sos>[i for i in teststr if re.search('\\d+[xX]', i)]<tab>Find a specific pattern (regular expression) in a list of strings (Python)<eos>
+<sos>df['A'][(df['B'] > 50) & (df['C'] == 900)]<tab>Selecting with complex criteria from pandas.DataFrame<eos>
+<sos>sorted(o.items())<tab>How to sort dictionaries by keys in Python<eos>
+<sos>sorted(d)<tab>How to sort dictionaries by keys in Python<eos>
+<sos>sorted(d.items())<tab>How to sort dictionaries by keys in Python<eos>
+<sos>int('1')<tab>convert strings into integers<eos>
+<sos>int()<tab>convert strings into integers<eos>
+<sos>T2 = [map(int, x) for x in T1]<tab>convert strings into integers<eos>
+<sos>subprocess.call(['./test.sh'])<tab>How to call a shell script from python code?<eos>
+<sos>subprocess.call(['notepad'])<tab>How to call a shell script from python code?<eos>
+<sos>[val for pair in zip(l1, l2) for val in pair]<tab>Interleaving two lists in Python<eos>
+<sos>encoded = base64.b64encode('data to be encoded')<tab>Base64 encoding in Python 3<eos>
+<sos>encoded = 'data to be encoded'.encode('ascii')<tab>Base64 encoding in Python 3<eos>
+<sos>lol = list(csv.reader(open('text.txt', 'rb'), delimiter='\t'))<tab>Parsing CSV / tab-delimited txt file with Python<eos>
+<sos>getattr(my_object, my_str)<tab>Python - Access object attributes as in a dictionary<eos>
+<sos>print(dict(zip(LD[0], zip(*[list(d.values()) for d in LD]))))<tab>list of dicts to/from dict of lists<eos>
+<sos>sum([pair[0] for pair in list_of_pairs])<tab>How do I sum the first value in each tuple in a list of tuples in Python?<eos>
+<sos>d = ast.literal_eval("{'code1':1,'code2':1}")<tab>Convert unicode string dictionary into dictionary in python<eos>
+<sos>[word for word in mystring.split() if word.startswith('$')]<tab>Find all words in a string that start with the $ sign in Python<eos>
+<sos>text = re.sub('^https?:\\/\\/.*[\\r\\n]*', '', text, flags=re.MULTILINE)<tab>How to remove any URL within a string in Python<eos>
+<sos>np.where(np.in1d(A, [1, 3, 4]).reshape(A.shape), A, 0)<tab>How to find all elements in a numpy 2-dimensional array that match a certain list?<eos>
+<sos>np.mean(a, axis=1)<tab>Calculate mean across dimension in a 2D array<eos>
+<sos>subprocess.call(['/usr/bin/Rscript', '--vanilla', '/pathto/MyrScript.r'])<tab>Running R script from python<eos>
+<sos>subprocess.call('/usr/bin/Rscript --vanilla /pathto/MyrScript.r', shell=True)<tab>Running R script from python<eos>
+<sos>writer.writeheader()<tab>How to add a header to a csv file in Python?<eos>
+<sos>df.fillna(df.mean(axis=1), axis=1)<tab>Pandas Dataframe: Replacing NaN with row average<eos>
+<sos>time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(1347517370))<tab>Python: Converting Epoch time into the datetime<eos>
+<sos>super(Derived, cls).do(a)<tab>Calling a base class's classmethod in Python<eos>
+<sos>a[np.where((a[:, (0)] == 0) * (a[:, (1)] == 1))]<tab>selecting rows in numpy ndarray based on the value of two columns<eos>
+<sos>re.split(' +', 'hello world sample text')<tab>Python regex separate space-delimited words into a list<eos>
+<sos>len(max(words, key=len))<tab>Length of longest word in a list<eos>
+<sos>result[0]['from_user']<tab>accessing python dictionary<eos>
+<sos>[line.split() for line in open('File.txt')]<tab>Save line in file to list<eos>
+<sos>res = dict((v, k) for k, v in a.items())<tab>Python: Best Way to Exchange Keys with Values in a Dictionary?<eos>
+<sos>new_file = open('path/to/FILE_NAME.ext', 'w')<tab>creating a tmp file in python<eos>
+<sos>df.groupby(['col1', 'col2'])['col3'].nunique().reset_index()<tab>How to count distinct values in a column of a pandas group by object?<eos>
+<sos>any(key.startswith('EMP$$') for key in dict1)<tab>Check for a key pattern in a dictionary in python<eos>
+<sos>[value for key, value in list(dict1.items()) if key.startswith('EMP$$')]<tab>Check for a key pattern in a dictionary in python<eos>
+<sos>pd.DataFrame({'email': sf.index, 'list': sf.values})<tab>python, best way to convert a pandas series into a pandas dataframe<eos>
+<sos>print('\t'.join(map(str, list)))<tab>printing tab-separated values of a list<eos>
+<sos>print('\xd0\xbf\xd1\x80\xd0\xb8'.encode('raw_unicode_escape'))<tab>Python unicode string with UTF-8?<eos>
+<sos>'Sopet\xc3\xb3n'.encode('latin-1').decode('utf-8')<tab>Python unicode string with UTF-8?<eos>
+<sos>image = image.resize((x, y), Image.ANTIALIAS)<tab>How to adjust the quality of a resized image in Python Imaging Library?<eos>
+<sos>re.findall('n(?<=[^n]n)n+(?=[^n])(?i)', s)<tab>Regex, find pattern only in middle of string<eos>
+<sos>print('{0:.0f}%'.format(1.0 / 3 * 100))<tab>how to show Percentage in python<eos>
+<sos>mylist.sort(key=lambda x: x['title'])<tab>Sort a list of dicts by dict values<eos>
+<sos>l.sort(key=lambda x: x['title'])<tab>Sort a list of dicts by dict values<eos>
+<sos>l.sort(key=lambda x: (x['title'], x['title_url'], x['id']))<tab>Sort a list of dicts by dict values<eos>
+<sos>heapq.nlargest(10, range(len(l1)), key=lambda i: abs(l1[i] - l2[i]))<tab>finding n largest differences between two lists<eos>
+<sos>soup.find_all('span', {'class': 'starGryB sp'})<tab>Finding multiple attributes within the span tag in Python<eos>
+<sos>df.to_sql('test', engine, schema='a_schema')<tab>Pandas writing dataframe to other postgresql schema<eos>
+<sos>brackets = re.sub('[^(){}[\\]]', '', s)<tab>Regular Expression to find brackets in a string<eos>
+<sos>list(dict((x[0], x) for x in L).values())<tab>Removing duplicates from list of lists in Python<eos>
+<sos>[line.rstrip('\n') for line in file]<tab>Reading a file without newlines<eos>
+<sos>[i for (i, x) in enumerate(testlist) if (x == 1)]<tab>get item's position in a list<eos>
+<sos>[i for (i, x) in enumerate(testlist) if (x == 1)]<tab>get item's position in a list<eos>
+<sos>for i in [i for (i, x) in enumerate(testlist) if (x == 1)]:
+    pass<tab>get item's position in a list<eos>
+<sos>for i in (i for (i, x) in enumerate(testlist) if (x == 1)):
+    pass<tab>get item's position in a list<eos>
+<sos>gen = (i for (i, x) in enumerate(testlist) if (x == 1))
+for i in gen:
+    pass<tab>get item's position in a list<eos>
+<sos>print(testlist.index(element))<tab>get item's position in a list<eos>
+<sos>try:
+    print(testlist.index(element))
+except ValueError:
+    pass<tab>get item's position in a list<eos>
+<sos>max(lis, key=lambda item: item[1])[0]<tab>Find the maximum value in a list of tuples in Python<eos>
+<sos>max(lis, key=itemgetter(1))[0]<tab>Find the maximum value in a list of tuples in Python<eos>
+<sos>time.sleep(1)<tab>How do I simulate a progress counter in a command line application in Python?<eos>
+<sos>""", """.join('(' + ', '.join(i) + ')' for i in L)<tab>Tuple conversion to a string<eos>
+<sos>b = models.CharField(max_length=7, default='0000000', editable=False)<tab>Default value for field in Django model<eos>
+<sos>sorted(list5, lambda x: (degree(x), x))<tab>How do I perform secondary sorting in python?<eos>
+<sos>sorted(list5, key=lambda vertex: (degree(vertex), vertex))<tab>How do I perform secondary sorting in python?<eos>
+<sos>(n for n in [1, 2, 3, 5])<tab>Python: convert list to generator<eos>
+<sos>newlist = [v for i, v in enumerate(oldlist) if i not in removelist]<tab>Remove multiple items from list in Python<eos>
+<sos>f = open('yourfile.txt', 'w')<tab>Deleting a specific line in a file (python)<eos>
+<sos>getattr(obj, 'attr')<tab>Attribute getters in python<eos>
+<sos>from functools import reduce
+reduce(lambda a, b: a + b, (('aa',), ('bb',), ('cc',)))<tab>How do I convert tuple of tuples to list in one line (pythonic)?<eos>
+<sos>map(lambda a: a[0], (('aa',), ('bb',), ('cc',)))<tab>How do I convert tuple of tuples to list in one line (pythonic)?<eos>
+<sos>df['range'].replace(',', '-', inplace=True)<tab>Python Pandas: How to replace a characters in a column of a dataframe?<eos>
+<sos>zip(*[('a', 1), ('b', 2), ('c', 3), ('d', 4)])<tab>inverse of zip<eos>
+<sos>zip(*[('a', 1), ('b', 2), ('c', 3), ('d', 4)])<tab>inverse of zip<eos>
+<sos>result = ([a for (a, b) in original], [b for (a, b) in original])<tab>inverse of zip<eos>
+<sos>result = ((a for (a, b) in original), (b for (a, b) in original))<tab>inverse of zip<eos>
+<sos>zip(*[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e',)])<tab>inverse of zip<eos>
+<sos>map(None, *[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e',)])<tab>inverse of zip<eos>
+<sos>json.dumps(Decimal('3.9'))<tab>Python JSON serialize a Decimal object<eos>
+<sos>d['mynewkey'] = 'mynewvalue'<tab>Add key to a dictionary<eos>
+<sos>data.update({'a': 1, })<tab>Add key to a dictionary<eos>
+<sos>data.update(dict(a=1))<tab>Add key to a dictionary<eos>
+<sos>data.update(a=1)<tab>Add key to a dictionary<eos>
+<sos>max([max(i) for i in matrix])<tab>Is there a one line code to find maximal value in a matrix?<eos>
+<sos>answer = str(round(answer, 2))<tab>Python - how to round down to 2 decimals<eos>
+<sos>ip = re.findall('[0-9]+(?:\\.[0-9]+){3}', s)<tab>Extract IP address from an html string (python)<eos>
+<sos>df.groupby('A').filter(lambda x: len(x) > 1)<tab>How do I filter a pandas DataFrame based on value counts?<eos>
+<sos>[x for x in myfile.splitlines() if x != '']<tab>Converting a string into a list in Python<eos>
+<sos>lst = map(int, open('filename.txt').readlines())<tab>Converting a string into a list in Python<eos>
+<sos>plt.colorbar(mappable=mappable, cax=ax3)<tab>Adding Colorbar to a Spectrogram<eos>
+<sos>Counter(' '.join(df['text']).split()).most_common(100)<tab>Count most frequent 100 words from sentences in Dataframe Pandas<eos>
+<sos>re.findall('(.+?):(.+?)\\b ?', text)<tab>Python split a string using regex<eos>
+<sos>list(itertools.combinations((1, 2, 3), 2))<tab>Generate all subsets of size k (containing k elements) in Python<eos>
+<sos>datetime.now(pytz.utc)<tab>Python: How to get a value of datetime.today() that is "timezone aware"?<eos>
+<sos>list2 = [x for x in list1 if x != []]<tab>Python: How to remove empty lists from a list?<eos>
+<sos>list2 = [x for x in list1 if x]<tab>Python: How to remove empty lists from a list?<eos>
+<sos>return HttpResponse(data, mimetype='application/json')<tab>Django view returning json without using template<eos>
+<sos>re.findall('(.*?)\\[.*?\\]', example_str)<tab>regex to get all text outside of brackets<eos>
+<sos>re.findall('(.*?)(?:\\[.*?\\]|$)', example_str)<tab>regex to get all text outside of brackets<eos>
+<sos>re.findall('\\(.+?\\)|\\w', '(zyx)bc')<tab>Matching multiple regex patterns with the alternation operator?<eos>
+<sos>re.findall('\\((.*?)\\)|(\\w)', '(zyx)bc')<tab>Matching multiple regex patterns with the alternation operator?<eos>
+<sos>re.findall('\\(.*?\\)|\\w', '(zyx)bc')<tab>Matching multiple regex patterns with the alternation operator?<eos>
+<sos>elements = ['%{0}%'.format(element) for element in elements]<tab>Perform a string operation for every element in a Python list<eos>
+<sos>subprocess.Popen(['background-process', 'arguments'])<tab>start python script as background process from within a python script<eos>
+<sos>[mydict[x] for x in mykeys]<tab>Python dictionary: Get list of values for list of keys<eos>
+<sos>dict([('Name', 'Joe'), ('Age', 22)])<tab>Create dictionary from lists of keys and multiple values<eos>
+<sos>data.reshape(-1, j).mean(axis=1).reshape(data.shape[0], -1)<tab>Numpy - Averaging multiple columns of a 2D array<eos>
+<sos>print(s.encode('unicode-escape').replace('"', '\\"'))<tab>Replace all quotes in a string with escaped quotes?<eos>
+<sos>re.split('(\\W+)', s)<tab>Partitioning a string in Python by a regular expression<eos>
+<sos>df.plot(kind='barh', stacked=True)<tab>plotting stacked barplots on a panda data frame<eos>
+<sos>{i[1]: i[0] for i in list(myDictionary.items())}<tab>How to reverse a dictionary in Python?<eos>
+<sos>[i for i, j in enumerate(myList) if 'how' in j.lower() or 'what' in j.lower()]<tab>finding index of multiple items in a list<eos>
+<sos>isinstance(obj, str)<tab>find out if a Python object is a string<eos>
+<sos>isinstance(o, str)<tab>find out if a Python object is a string<eos>
+<sos>(type(o) is str)<tab>find out if a Python object is a string<eos>
+<sos>isinstance(o, str)<tab>find out if a Python object is a string<eos>
+<sos>isinstance(obj_to_test, str)<tab>find out if a Python object is a string<eos>
+<sos>list2.extend(list1)<tab>take the content of a list and append it to another list<eos>
+<sos>list1.extend(mylog)<tab>take the content of a list and append it to another list<eos>
+<sos>c.extend(a)<tab>take the content of a list and append it to another list<eos>
+<sos>for line in mylog:
+    list1.append(line)<tab>take the content of a list and append it to another list<eos>
+<sos>b.append((a[0][0], a[0][2]))<tab>Appending tuples to lists<eos>
+<sos>app.config['SECRET_KEY'] = 'Your_secret_string'<tab>Where do I get a SECRET_KEY for Flask?<eos>
+<sos>pd.DataFrame(out.tolist(), columns=['out-1', 'out-2'], index=out.index)<tab>How to unpack a Series of tuples in Pandas?<eos>
+<sos>[x for x in range(len(stocks_list)) if stocks_list[x] == 'MSFT']<tab>How to find the position of an element in a list , in Python?<eos>
+<sos>ax.set_xticklabels(labels, rotation=45)<tab>Is it possible to wrap the text of xticks in matplotlib in python?<eos>
+<sos>re.sub('[^\\w]', ' ', s)<tab>How to remove symbols from a string with Python?<eos>
+<sos>os.path.basename(os.path.dirname(os.path.realpath(__file__)))<tab>get current directory - Python<eos>
+<sos>print(re.findall("'\\\\[0-7]{1,3}'", str))<tab>Regex and Octal Characters<eos>
+<sos>re.split('[ ](?=[A-Z]+\\b)', input)<tab>Python split string based on regex<eos>
+<sos>re.split('[ ](?=[A-Z])', input)<tab>Python split string based on regex<eos>
+<sos>r = requests.post(url, files=files, headers=headers, data=data)<tab>Using Python Requests to send file and JSON in single request<eos>
+<sos>open('filename', 'wb').write(bytes_)<tab>How to write bytes to a file in Python 3 without knowing the encoding?<eos>
+<sos>[dct[k] for k in lst]<tab>Mapping dictionary value to list<eos>
+<sos>x.set_index('name').index.get_duplicates()<tab>How to find duplicate names using pandas?<eos>
+<sos>round(1.923328437452, 3)<tab>Truncating floats in Python<eos>
+<sos>sorted(li, key=lambda x: datetime.strptime(x[1], '%d/%m/%Y'), reverse=True)<tab>Order list by date (String and datetime)<eos>
+<sos>ax.set_rlabel_position(135)<tab>Move radial tick labels on a polar plot in matplotlib<eos>
+<sos>os.path.isabs(my_path)<tab>How to check if a path is absolute path or relative path in cross platform way with Python?<eos>
+<sos>len(list(yourdict.keys()))<tab>Counting the Number of keywords in a dictionary in python<eos>
+<sos>len(set(open(yourdictfile).read().split()))<tab>Counting the Number of keywords in a dictionary in python<eos>
+<sos>df.groupby('id').first()<tab>Pandas dataframe get first row of each group<eos>
+<sos>pd.concat([df[0].apply(pd.Series), df[1]], axis=1)<tab>Splitting a list in a Pandas cell into multiple columns<eos>
+<sos>re.findall('src="js/([^"]*\\bjquery\\b[^"]*)"', data)<tab>Extracting specific src attributes from script tags<eos>
+<sos>sum(int(float(item)) for item in [_f for _f in ['', '3.4', '', '', '1.0'] if _f])<tab>Most efficient way to convert items of a list to int and sum them up<eos>
+<sos>subprocess.Popen(['c:\\Program Files\\VMware\\VMware Server\\vmware-cmd.bat'])<tab>How to use subprocess when multiple arguments contain spaces?<eos>
+<sos>q.put((-n, n))<tab>how to reverse a priority queue in Python without using classes?<eos>
+<sos>df['group'].plot(kind='bar', color=['r', 'g', 'b', 'r', 'g', 'b', 'r'])<tab>pandas plot dataframe barplot with colors by category<eos>
+<sos>re.findall('([a-fA-F\\d]{32})', data)<tab>Python regex for MD5 hash<eos>
+<sos>len(my_list)<tab>Getting the length of an array<eos>
+<sos>len(l)<tab>Getting the length of an array<eos>
+<sos>len(s)<tab>Getting the length of an array<eos>
+<sos>len(my_tuple)<tab>Getting the length of an array<eos>
+<sos>len(my_string)<tab>Getting the length of an array<eos>
+<sos>"""\\a""".decode('string_escape')<tab>remove escape character from string<eos>
+<sos>"""obama""".replace('a', '%temp%').replace('b', 'a').replace('%temp%', 'b')<tab>Python string replace two things at once?<eos>
+<sos>shutil.rmtree('/folder_name')<tab>How do I remove/delete a folder that is not empty with Python?<eos>
+<sos>data['weekday'] = data['my_dt'].apply(lambda x: x.weekday())<tab>in pandas how can I groupby weekday() for a datetime column?<eos>
+<sos>sorted(x, key=x.get, reverse=True)<tab>How to sort Counter by value? - python<eos>
+<sos>sorted(list(x.items()), key=lambda pair: pair[1], reverse=True)<tab>How to sort Counter by value? - python<eos>
+<sos>np.vstack((a, b))<tab>Append a NumPy array to a NumPy array<eos>
+<sos>print(concatenate((a, b), axis=0))<tab>numpy concatenate two arrays vertically<eos>
+<sos>print(concatenate((a, b), axis=1))<tab>numpy concatenate two arrays vertically<eos>
+<sos>c = np.r_[(a[None, :], b[None, :])]<tab>numpy concatenate two arrays vertically<eos>
+<sos>np.array((a, b))<tab>numpy concatenate two arrays vertically<eos>
+<sos>print(socket.getaddrinfo('google.com', 80))<tab>How can I do DNS lookups in Python, including referring to /etc/hosts?<eos>
+<sos>df.xs('sat', level='day', drop_level=False)<tab>How to update a subset of a MultiIndexed pandas DataFrame<eos>
+<sos>return HttpResponse('Unauthorized', status=401)<tab>How do I return a 401 Unauthorized in Django?<eos>
+<sos>Flask(__name__, template_folder='wherever')<tab>How to dynamically select template directory to be used in flask?<eos>
+<sos>session.execute('INSERT INTO t1 (SELECT * FROM t2)')<tab>How do I INSERT INTO t1 (SELECT * FROM t2) in SQLAlchemy?<eos>
+<sos>c2.sort(key=lambda row: row[2])<tab>Sorting a list of lists in Python<eos>
+<sos>c2.sort(key=lambda row: (row[2], row[1], row[0]))<tab>Sorting a list of lists in Python<eos>
+<sos>c2.sort(key=lambda row: (row[2], row[1]))<tab>Sorting a list of lists in Python<eos>
+<sos>matplotlib.rc('font', **{'sans-serif': 'Arial', 'family': 'sans-serif'})<tab>Non-ASCII characters in Matplotlib<eos>
+<sos>df['date'].apply(lambda x: x.toordinal())<tab>Pandas datetime column to ordinal<eos>
+<sos>element.get_attribute('innerHTML')<tab>Get HTML Source of WebElement in Selenium WebDriver using Python<eos>
+<sos>df.index.get_loc('bob')<tab>Most efficient way to get the integer index of a key in pandas<eos>
+<sos>os.system('gnome-terminal -e \'bash -c "sudo apt-get update; exec bash"\'')<tab>open a terminal from python<eos>
+<sos>my_dict.update({'third_key': 1})<tab>Python - How to declare and add items to an array?<eos>
+<sos>my_list = []<tab>Python - How to declare and add items to an array?<eos>
+<sos>my_list.append(12)<tab>Python - How to declare and add items to an array?<eos>
+<sos>myList.insert(0, 'wuggah')<tab>Add entry to list and remove first one in Python<eos>
+<sos>"""\\xF3\\xBE\\x80\\x80""".replace('\\x', '').decode('hex')<tab>Converting a hex-string representation to actual bytes in Python<eos>
+<sos>df[df.columns[-1]]<tab>How to select the last column of dataframe<eos>
+<sos>df.loc[df['Letters'] == 'C', 'Letters'].values[0]<tab>How to get a value from a Pandas DataFrame and not the index and object type<eos>
+<sos>np.column_stack(([1, 2, 3], [4, 5, 6]))<tab>Converting two lists into a matrix<eos>
+<sos>type(i)<tab>determine the variable type<eos>
+<sos>type(v)<tab>determine the variable type<eos>
+<sos>type(v)<tab>determine the variable type<eos>
+<sos>type(v)<tab>determine the variable type<eos>
+<sos>type(v)<tab>determine the variable type<eos>
+<sos>print(type(variable_name))<tab>determine the variable type<eos>
+<sos>next(itertools.islice(range(10), 5, 5 + 1))<tab>Get the nth item of a generator in Python<eos>
+<sos>print('"{}"'.format(word))<tab>printing double quotes around a variable<eos>
+<sos>""" """.join(list)<tab>Python concat string with list<eos>
+<sos>y = [[] for n in range(2)]<tab>Extending a list of lists in Python?<eos>
+<sos>data = [line.strip() for line in open('C:/name/MyDocuments/numbers', 'r')]<tab>How do you read a file into a list in Python?<eos>
+<sos>"""""".join([char for char in 'it is icy' if char != 'i'])<tab>How to delete all instances of a character in a string in python?<eos>
+<sos>re.sub('i', '', 'it is icy')<tab>How to delete all instances of a character in a string in python?<eos>
+<sos>"""it is icy""".replace('i', '')<tab>How to delete all instances of a character in a string in python?<eos>
+<sos>"""""".join([char for char in 'it is icy' if char != 'i'])<tab>How to delete all instances of a character in a string in python?<eos>
+<sos>df.dropna(subset=[1])<tab>How to drop rows of Pandas DataFrame whose value in certain columns is NaN<eos>
+<sos>[x for x in myList if x.n == 30]<tab>Searching a list of objects in Python<eos>
+<sos>nums = [int(x) for x in intstringlist]<tab>converting list of string to list of integer<eos>
+<sos>map(int, eval(input('Enter the unfriendly numbers: ')))<tab>converting list of string to list of integer<eos>
+<sos>sys.stdout.write('.')<tab>print in Python without newline or space<eos>
+<sos>int(round(2.51 * 100))<tab>Python float to int conversion<eos>
+<sos>os.chdir('/mydir')
+for file in glob.glob('*.txt'):
+    pass<tab>Find all files in directory with extension .txt<eos>
+<sos>for file in os.listdir('/mydir'):
+    if file.endswith('.txt'):
+        pass<tab>Find all files in directory with extension .txt<eos>
+<sos>for (root, dirs, files) in os.walk('/mydir'):
+    for file in files:
+        if file.endswith('.txt'):
+            pass<tab>Find all files in directory with extension .txt<eos>
+<sos>df.plot(legend=False)<tab>Pandas (python) plot() without a legend<eos>
+<sos>for i in range(256):
+    for j in range(256):
+        ip = ('192.168.%d.%d' % (i, j))
+        print(ip)<tab>loop through an IP address range<eos>
+<sos>for (i, j) in product(list(range(256)), list(range(256))):
+    pass<tab>loop through an IP address range<eos>
+<sos>generator = iter_iprange('192.168.1.1', '192.168.255.255', step=1)<tab>loop through an IP address range<eos>
+<sos>sum(1 << i for i, b in enumerate(x) if b)<tab>Python/Numpy: Convert list of bools to unsigned int<eos>
+<sos>target.write('%r\n%r\n%r\n' % (line1, line2, line3))<tab>Python: How to write multiple strings in one line?<eos>
+<sos>[y for x in data for y in (x if isinstance(x, list) else [x])]<tab>How to flatten a hetrogenous list of list into a single list in python?<eos>
+<sos>print('foo\nbar'.encode('string_escape'))<tab>In Python, is it possible to escape newline characters when printing a string?<eos>
+<sos>"""""".join(s.rsplit(',', 1))<tab>String Slicing Python<eos>
+<sos>(x[1:] + x[:-1]) / 2<tab>Middle point of each pair of an numpy.array<eos>
+<sos>x[:-1] + (x[1:] - x[:-1]) / 2<tab>Middle point of each pair of an numpy.array<eos>
+<sos>arr = numpy.fromiter(codecs.open('new.txt', encoding='utf-8'), dtype='<U2')<tab>Reading unicode elements into numpy array<eos>
+<sos>l = sorted(l, key=itemgetter('time'), reverse=True)<tab>How to sort this list in Python?<eos>
+<sos>l = sorted(l, key=lambda a: a['time'], reverse=True)<tab>How to sort this list in Python?<eos>
+<sos>df.loc[df[0].str.contains('(Hel|Just)')]<tab>pandas DataFrame filter regex<eos>
+<sos>re.search('\\[(.*)\\]', your_string).group(1)<tab>How do I find the string between two special characters?<eos>
+<sos>[d.strftime('%Y%m%d') for d in pandas.date_range('20130226', '20130302')]<tab>How to create a list of date string in 'yyyymmdd' format with Python Pandas?<eos>
+<sos>"""The big brown fox is brown""".count('brown')<tab>How to count the number of times something occurs inside a certain string?<eos>
+<sos>json.loads(request.body)<tab>Sending post data from angularjs to django as JSON and not as raw content<eos>
+<sos>urllib.request.urlretrieve(url, file_name)<tab>Download file from web in Python 3<eos>
+<sos>text.split()<tab>Split string into a list<eos>
+<sos>text.split(',')<tab>Split string into a list<eos>
+<sos>line.split()<tab>Split string into a list<eos>
+<sos>[re.sub('(?<!\\d)\\.(?!\\d)', ' ', i) for i in s]<tab>Replacing characters in a regex<eos>
+<sos>sorted(list_of_strings, key=lambda s: s.split(',')[1])<tab>Sort A list of Strings Based on certain field<eos>
+<sos>subprocess.check_call('vasp | tee tee_output', shell=True)<tab>how to call multiple bash functions using | in python<eos>
+<sos>[element for element in lst if isinstance(element, int)]<tab>How to eliminate all strings from a list<eos>
+<sos>[element for element in lst if not isinstance(element, str)]<tab>How to eliminate all strings from a list<eos>
+<sos>newlist = sorted(list_to_be_sorted, key=lambda k: k['name'])<tab>How do I sort a list of dictionaries by values of the dictionary in Python?<eos>
+<sos>newlist = sorted(l, key=itemgetter('name'), reverse=True)<tab>How do I sort a list of dictionaries by values of the dictionary in Python?<eos>
+<sos>list_of_dicts.sort(key=operator.itemgetter('name'))<tab>How do I sort a list of dictionaries by values of the dictionary in Python?<eos>
+<sos>list_of_dicts.sort(key=operator.itemgetter('age'))<tab>How do I sort a list of dictionaries by values of the dictionary in Python?<eos>
+<sos>df.groupby('prots').sum().sort('scores', ascending=False)<tab>How to sort a Dataframe by the ocurrences in a column in Python (pandas)<eos>
+<sos>""",""".join(trans['category'])<tab>How can I access elements inside a list within a dictionary python?<eos>
+<sos>"""""".join(['A', 'B', 'C', 'D'])<tab>Variants of string concatenation?<eos>
+<sos>json.load(urllib.request.urlopen('url'))<tab>How do I get JSON data from RESTful service using Python?<eos>
+<sos>[x for x in sents if not x.startswith('@$\t') and not x.startswith('#')]<tab>Removing an item from list matching a substring - Python<eos>
+<sos>Entry.objects.filter(pub_date__contains='08:00')<tab>Django filter by hour<eos>
+<sos>list.sort(key=lambda item: (item['points'], item['time']))<tab>sort a list of dicts by x then by y<eos>
+<sos>(t - datetime.datetime(1970, 1, 1)).total_seconds()<tab>How to convert a Python datetime object to seconds<eos>
+<sos>re.sub('(\\_a)?\\.([^\\.]*)$', '_suff.\\2', 'long.file.name.jpg')<tab>How to replace only part of the match with python re.sub<eos>
+<sos>import imp
+imp.reload(module)<tab>How can I reload objects in my namespace in ipython<eos>
+<sos>struct.unpack('H', struct.pack('h', number))<tab>How to get a 16bit Unsigned integer in python<eos>
+<sos>numlist = [float(x) for x in numlist]<tab>How can I use sum() function for a list in Python?<eos>
+<sos>df.to_csv(filename, index=False)<tab>Removing index column in pandas<eos>
+<sos>json_data = json.loads(unescaped)<tab>How to convert a string data to a JSON object in python?<eos>
+<sos>[chr(i) for i in range(127)]<tab>Is there a Python Library that contains a list of all the ascii characters?<eos>
+<sos>newFile.write(struct.pack('5B', *newFileBytes))<tab>Python how to write to a binary file?<eos>
+<sos>re.sub('^[A-Z0-9]*(?![a-z])', '', string)<tab>Python Regex - checking for a capital letter with a lowercase after<eos>
+<sos>list(dict.keys())[-1]<tab>Last Key in Python Dictionary<eos>
+<sos>print('hi there', file=f)<tab>write line to file<eos>
+<sos>f = open('myfile', 'w')
+f.write('hi there\n')
+f.close()<tab>write line to file<eos>
+<sos>with open('somefile.txt', 'a') as the_file:
+    the_file.write('Hello\n')<tab>write line to file<eos>
+<sos>s.encode('iso-8859-15')<tab>Python - Unicode to ASCII conversion<eos>
+<sos>AuthorizedEmail.objects.filter(group=group).order_by('-added')[0]<tab>How to get max value in django ORM<eos>
+<sos>re.findall('Test([0-9.]*[0-9]+)', text)<tab>Python regex findall numbers and dots<eos>
+<sos>re.findall('Test([\\d.]*\\d+)', text)<tab>Python regex findall numbers and dots<eos>
+<sos>os.system('powershell.exe', 'script.ps1')<tab>Is there a way to run powershell code in python<eos>
+<sos>b.sort(key=lambda x: x[1][2])<tab>Sorting a dictionary of tuples in Python<eos>
+<sos>list(cf.get_range().get_keys())<tab>How do I get all the keys that are stored in the Cassandra column family with pycassa?<eos>
+<sos>datetime.datetime.now()<tab>how to create a file name with the current date & time in python?<eos>
+<sos>next(i for i, x in enumerate(lst) if not isinstance(x, bool) and x == 1)<tab>How to get the index of an integer from a list if the list contains a boolean?<eos>
+<sos>a[:] = [(x - 13) for x in a]<tab>Subtract a value from every number in a list in Python?<eos>
+<sos>random.choice(os.listdir('C:\\'))<tab>Best way to choose a random file from a directory<eos>
+<sos>max(x.min(), x.max(), key=abs)<tab>How to get the highest element in absolute value in a numpy matrix?<eos>
+<sos>re.findall('"(http.*?)"', s, re.MULTILINE | re.DOTALL)<tab>Using Regular Expressions to extract specific urls in python<eos>
+<sos>re.findall('http://[^t][^s"]+\\.html', document)<tab>Using Regular Expressions to extract specific urls in python<eos>
+<sos>mystring.replace(' ', '! !').split('!')<tab>Is there a function in Python to split a string without ignoring the spaces?<eos>
+<sos>open(path, 'r')<tab>Open file in Python<eos>
+<sos>[[sum(item) for item in zip(*items)] for items in zip(*data)]<tab>Sum of multiple list of lists index wise<eos>
+<sos>a[:, (np.newaxis)]<tab>numpy: syntax/idiom to cast (n,) array to a (n, 1) array?<eos>
